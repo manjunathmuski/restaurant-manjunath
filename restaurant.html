@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #d4a373;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background-color: #bc6c25;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .hero button:hover {
+            background-color: #8c531b;
+        }
+        .section {
+            padding: 20px 30px;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .dishes-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .dish {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .dish img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .dish h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .dish p {
+            margin: 0 10px 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #d4a373;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Restaurant Name</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h2>Delicious Food, Delivered Fresh</h2>
+            <p>Experience the best dining with us.</p>
+            <button>Order Now</button>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Our Featured Dishes</h2>
+        <div class="dishes-container">
+            <div class="dish">
+                <img src="https://via.placeholder.com/300x200" alt="Dish 1">
+                <h3>Dish Name 1</h3>
+                <p>A delightful dish made with fresh ingredients.</p>
+            </div>
+            <div class="dish">
+                <img src="https://via.placeholder.com/300x200" alt="Dish 2">
+                <h3>Dish Name 2</h3>
+                <p>Aromatic and flavorful for a perfect meal.</p>
+            </div>
+            <div class="dish">
+                <img src="https://via.placeholder.com/300x200" alt="Dish 3">
+                <h3>Dish Name 3</h3>
+                <p>Savor the taste of excellence in every bite.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2024 Restaurant Clone. All rights reserved.
+    </footer>
+
+</body>
+</html>
